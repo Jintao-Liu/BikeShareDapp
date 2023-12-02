@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vm;
+  background-color: #f2f2f2;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.top-div{
+  position: relative;
+  width: 100vm;
+  height: 50px;
+  display: flex;
+  background-color: rgb(238, 188, 94);
+}
+.walletconnect-btn{
+  background-color: rgb(238, 188, 94);
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 100px;
+  
+}
+.top-div span{
+  position: absolute;
+  right: 50%;
+  font-size: 30px;
+  color: white;
+}
+
+.top-btn{
+  position: absolute;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  right: 0;
+}
+.top-btn > div{
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.top-btn > div a{
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+}
+.mid{
+  height: 150px;
+  width: auto;
+}
+.mid-box{
+  
+  margin-left: 130px;
+}
+.mid-box::before{
+  content: "";
+  display: block;
+  height: 60px;
+}
+.amount{
+  font-size: 24px;
+}
+.bct-1{
+  font-size: 24px;
+}
+.end{
+  display: flex;
+  justify-content:center
+}
+.box1{
+  height: 450px;
+  width: 400px;
+}
+.box1 img{
+  width: 400px;
+  height: 300px;
+}
+.btn-1{
+  height: 100px;
+  width: auto;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.btn1-rent{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+  
+}
+.btn1-return{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+}
+
+.box2{
+  height: 450px;
+  width: 400px;
+  margin: 0 30px;
+}
+.box2 img{
+  width: 400px;
+  height: 300px;
+}
+.btn-2{
+  height: 100px;
+  width: auto;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.btn2-rent{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+  
+}
+.btn2-return{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+}
+.box3{
+  height: 450px;
+  width: 400px;
+}
+.box3 img{
+  width: 400px;
+  height: 300px;
+}
+.btn-3{
+  height: 100px;
+  width: auto;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.btn3-rent{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+  
+}
+.btn3-return{
+  width: 100px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #f2f2f2;
+  background-color: rgb(238, 188, 94);
+  border: 1px solid rgb(238, 188, 94);
+}
+  
+  

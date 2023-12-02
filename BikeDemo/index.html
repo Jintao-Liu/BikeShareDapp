@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranting</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/web3/1.10.0/web3.min.js"></script>
+</head>
+<body>
+    <div class="top-div">
+        <button class="walletconnect-btn">Connect Wallet</button>
+        <span>BikeSharing</span>
+        <div class="top-btn">
+            <div class="owner-page">
+                <a href="../OwnerPage/Owner.html">Owner</a>
+            </div>
+            <div class="landing-page">
+                <a href="../LandingPage/Landing.html">Landing</a>
+            </div>
+            <div class="Renting-page">
+                <a href="#">Renting</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="mid">
+        <div>
+            <span>current address:</span>
+            <input type="text" disabled class="show-address">
+        </div>
+    </div>
+    <div class="mid">
+        <div class="mid-box">
+            <span class="amount"></span>
+        <span class="bct-1"> BCT OWNED</span>
+        </div>
+        
+    </div>
+
+    <div class="end">
+        <div class="box1">
+            <div class="img-1">
+                <a href="./transfer/transfer01.html"><img src="./img/1.png" alt=""></a>
+                <span>position:Capen;</span>
+                <span>Status:</span><span class="img-1ava"></span>
+            </div>
+            <div class="btn-1">
+                <button class="btn1-rent">Rent</button>
+                <button class="btn1-return">Return</button>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="img-2">
+                <a href="./transfer/transfer02.html"><img src="./img/2.png" alt=""></a>
+                <span>position:Baldy;</span>
+                <span>Status:</span><span class="img-2ava"></span></span>
+            </div>
+            <div class="btn-2">
+                <button class="btn2-rent">Rent</button>
+                <button class="btn2-return">Return</button>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="img-3">
+                <img src="./img/3.png" alt="">
+                <span>position:O'Brian;</span>
+                <span>Status:</span><span>Avalible</span>
+            </div>
+            <div class="btn-3">
+                <button class="btn3-rent">Rent</button>
+                <button class="btn3-return">Return</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module">
+		import{address01,abi01} from "../abi.js";
+         $(async function() {
+			const address = address01
+			const abi = abi01
+			var web3 = null
+            var contract = null
+            var account = null
+            if (window.ethereum === undefined) {
+            alert("请安装metamask")
+        } else {
+            try {
+                const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
+                account = accounts[0]
+            } catch (e) {
+            }
+            web3 = new Web3(window.ethereum)
+            contract = new web3.eth.Contract(abi, address)
+        }
+        
+        $(".show-address").val(account)
+
+            $(".walletconnect-btn").on("click", async function () {
+            const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
+            account = accounts[0]
+
+        })
+
+        })
+    </script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
